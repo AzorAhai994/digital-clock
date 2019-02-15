@@ -1,0 +1,41 @@
+body {
+  /*  font-family: "Roboto Mono", monospace; */
+  font-family: "Share Tech Mono", monospace;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  background: #0f3854;
+  background: linear-gradient(#0a2e38 0%, #000000 70%);
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.clock {
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  align-self: center;
+  justify-self: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+}
+#date {
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+.clock p {
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  padding: 5px 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .clock p {
+    font-size: 50px;
+  }
+}
