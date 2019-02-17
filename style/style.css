@@ -13,8 +13,6 @@ body {
   overflow: hidden;
 }
 
-
-
 .clock {
   /* display: grid;
   grid-template-columns: 1fr; */
@@ -43,22 +41,24 @@ body {
   height: 10px;
   background: #ffffffc9;
   border-radius: 130px;
-
   position: relative;
   z-index: 1;
 }
 
 #indicator {
-
   display: block;
   height: 10px;
   background: #daf6ff;
   border-radius: 130px;
   box-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
-
-
   position: absolute;
   z-index: 0;
+}
+
+#in-value {
+  font-size: 1em;
+  text-align: center;
+  display: block;
 }
 
 @media screen and (max-width: 400px) {

@@ -22,8 +22,8 @@ function showTime() {
     var dan = weekday[date.getDay()]; //dan u nedelji
     var diff = (midnight - now) / 1000; // vreme do ponoci u sekundama
 
-    var valDiff = 86400 - diff;
-    var cssValue = 100 - (valDiff / 864);
+    var valDiff = 86400 - diff; // razlika (preostalo vreme)
+    var cssValue = 100 - (valDiff / 864); // preostalo vreme u procentima
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
@@ -39,7 +39,8 @@ function showTime() {
     document.getElementById("seconds").textContent = s;
     //  document.getElementById("miliseconds").textContent = ms - 1;
     document.getElementById("indicator").style.width = cssValue + "%";
-    console.log(cssValue);
+    // document.getElementById("in-value").textContent = cssValue + "%";
+    // console.log(cssValue);
     setTimeout(showTime, 1000);
 
 }
